@@ -5,8 +5,8 @@ import {ManuProps} from "./Manu.props";
 
 export const Menu: FC<ManuProps> = ({ isOpen, ...props}) => (
     <div className={cn(style.menu, {
-        [style.close]: isOpen,
-        [style.open]: !isOpen
+        [style.close]: !isOpen,
+        [style.open]: isOpen
     })}
          {...props}
     >

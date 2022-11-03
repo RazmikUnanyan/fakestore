@@ -1,9 +1,38 @@
 @use '../../styles/abstracts' as *;
 
 .header {
+  padding: 20px;
+  border-bottom: 1px solid $black;
+}
+
+.search {
   display: flex;
   align-items: center;
   gap: 20px;
-  padding: 20px;
-  border-bottom: 2px solid $black;
+}
+
+.headerBottom {
+  padding-top: 30px;
+  display: flex;
+  font-size: $fs-secondary;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+}
+
+.filters {
+  border-top: 1px solid $black-light;
+  padding: 10px 0;
+  margin-top: 20px;
+  height: 30px;
+}
+
+@media (max-width: $mobile) {
+  .headerBottom {
+    font-size: $fs-media;
+  }
 }

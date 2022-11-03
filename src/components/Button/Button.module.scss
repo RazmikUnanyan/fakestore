@@ -1,0 +1,10 @@
+@use '../../styles/abstracts' as *;
+
+.button {
+  border: none;
+  background: none;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  gap: 5px;
+ }
