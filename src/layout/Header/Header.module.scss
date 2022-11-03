@@ -14,6 +14,7 @@
 .headerBottom {
   padding-top: 30px;
   display: flex;
+  gap: 15px;
   font-size: $fs-secondary;
   align-items: center;
   justify-content: space-between;
@@ -26,9 +27,13 @@
 
 .filters {
   border-top: 1px solid $black-light;
-  padding: 10px 0;
+  padding: 10px 0 0;
   margin-top: 20px;
-  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 10px;
+  flex-wrap: wrap;
 }
 
 @media (max-width: $mobile) {

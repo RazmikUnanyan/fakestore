@@ -2,9 +2,7 @@ import React, {FC, useState} from 'react';
 import style from "./Header.module.scss";
 import {ReactComponent as FilterIcon} from "../../assets/svg/filter.svg";
 import {HeaderProps} from "./Header.props";
-import {Button, Input, Menu, Switch} from "../../components";
-import {NavBarProps} from "../NavBar/NavBar.props";
-import NavBar from "../NavBar/NavBar";
+import {Button, Input, Menu, Switch, NavBar} from "../../components";
 
 const Header: FC<HeaderProps> = () => {
     const [isOpen, setOpen] = useState<boolean>(false);
@@ -36,7 +34,15 @@ const Header: FC<HeaderProps> = () => {
             </div>
             {showFilters && (
                 <div className={style.filters}>
-                    filters
+                    {[...new Array(4)].map( (f, index) => (
+                        <select key={index}>
+                            <option value="0">filters:</option>
+                            <option value="1">filter 1</option>
+                            <option value="2">filter 2</option>
+                            <option value="3">filter 3</option>
+                            <option value="4">filter 4</option>
+                        </select>
+                    ))}
                 </div>
             )}
         </header>
