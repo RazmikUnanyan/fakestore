@@ -4,29 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5a86119a-36d5-4d5a-96eb-2e20ce71dcc7" name="Changes" comment="feat: header">
-      <change afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/svg/star.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Card/Card.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Card/Card.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/NavBar/NavBar.props.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/hooks/store.hooks.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/interfaces/products.interface.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/redux/apiSlice.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/redux/store.ts" afterDir="false" />
+    <list default="true" id="5a86119a-36d5-4d5a-96eb-2e20ce71dcc7" name="Changes" comment="feat: Card">
+      <change afterPath="$PROJECT_DIR$/src/pages/Product/Product.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Product/Product.props.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Product/Product.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/layout/Header/Header.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/layout/Header/Header.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/layout/Header/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/layout/Header/Header.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/layout/Layout.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/layout/Layout.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/layout/NavBar/NavBar.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/NavBar/NavBar.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/layout/NavBar/NavBar.props.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Card/Card.props.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/layout/NavBar/NavBar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/NavBar/NavBar.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Main/Main.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Main/Main.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Card/Card.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Card/Card.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/NavBar/NavBar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/NavBar/NavBar.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/Main/Main.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Main/Main.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/abstracts/_fonts.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/abstracts/_fonts.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/apiSlice.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/apiSlice.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -52,7 +40,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/Users/macbook/Desktop/tests/fakestore/src/assets/svg",
+    "last_opened_file_path": "/Users/macbook/Desktop/tests/fakestore/src/pages/Product",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -64,11 +52,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/pages/Product" />
       <recent name="$PROJECT_DIR$/src/assets/svg" />
       <recent name="$PROJECT_DIR$/src/components/Card" />
       <recent name="$PROJECT_DIR$/src" />
       <recent name="$PROJECT_DIR$/src/components" />
-      <recent name="$PROJECT_DIR$/src/components/Menu" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/components" />
@@ -85,7 +73,7 @@
       <updated>1667459971573</updated>
       <workItem from="1667459972912" duration="353000" />
       <workItem from="1667460462530" duration="11756000" />
-      <workItem from="1667472716059" duration="6755000" />
+      <workItem from="1667472716059" duration="8742000" />
     </task>
     <task id="LOCAL-00001" summary="fix: README.md">
       <created>1667460072695</created>
@@ -108,7 +96,14 @@
       <option name="project" value="LOCAL" />
       <updated>1667474564612</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="feat: Card">
+      <created>1667479925202</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1667479925202</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -129,6 +124,7 @@
     <MESSAGE value="fix: README.md" />
     <MESSAGE value="feat: added menu" />
     <MESSAGE value="feat: header" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: header" />
+    <MESSAGE value="feat: Card" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: Card" />
   </component>
 </project>

@@ -7,6 +7,11 @@
   border-radius: 25px;
   padding: 20px;
   font-size: $fs-secondary;
+  cursor: pointer;
+}
+
+.card:hover img{
+  opacity: 0.5;
 }
 
 .detail {
@@ -23,6 +28,12 @@
 .rating {
   display: flex;
   gap: 5px;
+}
+
+.title {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .imgWrapper {

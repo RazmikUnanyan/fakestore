@@ -4,11 +4,11 @@ import {NavBarProps} from "./NavBar.props";
 
 export const NavBar: FC<NavBarProps> = ({...props}) => (
     <nav {...props}>
-        <ul className={style.ul}>
-            <li><a href="src/components/NavBar/NavBar#">Профель</a></li>
-            <li><a href="src/components/NavBar/NavBar#">Настройки</a></li>
-            <li><a href="src/components/NavBar/NavBar#">Корзина</a></li>
-            <li><a href="src/components/NavBar/NavBar#">Выйти</a></li>
+        <ul role="list" className={style.ul} >
+            <li><a href="#">Профель</a></li>
+            <li><a href="#">Настройки</a></li>
+            <li><a href="#">Корзина</a></li>
+            <li><a href="#">Выйти</a></li>
         </ul>
     </nav>
 );
