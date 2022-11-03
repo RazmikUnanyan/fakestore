@@ -1,0 +1,9 @@
+@use '../../styles/abstracts' as *;
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  border-bottom: 2px solid $black;
+}

@@ -1,0 +1,10 @@
+@use '../../styles/abstracts' as *;
+
+.input {
+  border: 5px solid $black;
+  height: 50px;
+  width: 100%;
+  outline: none;
+  padding: 10px;
+  font-size: $fs-primary;
+}

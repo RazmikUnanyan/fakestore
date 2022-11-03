@@ -1,0 +1,56 @@
+@use '../../styles/abstracts' as *;
+
+.menu {
+  cursor: pointer;
+  width: 50px;
+  height: 45px;
+  position: relative;
+}
+
+.close span {
+  position: absolute;
+  background-color: $black;
+  border-radius: 25%;
+  height: 5px;
+  width: 100%;
+  transition: all 0.3s ease;
+}
+.close span:first-child {
+  top: 0;
+}
+.close span:nth-child(2) {
+  top: 19px;
+}
+.close span:last-child {
+  top: 38px;
+}
+
+
+.open span {
+  position: absolute;
+  background-color: $black;
+  border-radius: 25%;
+  height: 5px;
+  width: 100%;
+  transition: all 0.3s ease;
+}
+
+
+.open {
+  height:25px;
+}
+
+.open span:nth-child(2) {
+  opacity: 0;
+}
+.open span:first-child,
+.open span:last-child {
+  top: 6px;
+  background-color: $black;
+}
+.open span:first-child {
+  transform: rotate(45deg);
+}
+.open span:last-child {
+  transform: rotate(-45deg);
+}
