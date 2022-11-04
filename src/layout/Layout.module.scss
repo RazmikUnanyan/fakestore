@@ -4,4 +4,15 @@
 .main {
   padding: 20px;
   background: $brown-light;
+  min-height: 100vh;
+}
+
+.dark {
+  background: $black;
+  color: $white;
+   div {
+     div {
+       background: $brown;
+     }
+   }
 }

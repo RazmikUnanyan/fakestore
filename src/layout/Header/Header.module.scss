@@ -36,8 +36,55 @@
   flex-wrap: wrap;
 }
 
+.categories {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+.categories a {
+  text-decoration: none;
+  color: $black;
+  font-size: $fs-primary;
+}
+
+.active {
+  background: brown;
+}
+
+.dark {
+  border-bottom: 1px solid $white;
+  background: $brown;
+
+  input {
+    border: 5px solid $white;
+  }
+
+  a {
+    text-decoration: none;
+    color: $white;
+  }
+
+  button {
+    color: $white;
+  }
+
+  ul {
+    li {
+      a {
+        color: $white;
+      }
+    }
+  }
+}
+
+
 @media (max-width: $mobile) {
   .headerBottom {
     font-size: $fs-media;
+  }
+
+  .categories {
+    display: block;
   }
 }

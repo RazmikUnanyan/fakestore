@@ -11,9 +11,20 @@ const Product: FC<ProductProps> = ({...props}) => {
     const {data: product, isLoading} = useGetProductQuery({id: idProduct})
 
     return (
-        <div {...props}>
-            {JSON.stringify(product)}
-        </div>
+       isLoading
+                ? <>"Loading..."</>
+                : (
+                    <div className={style.product} {...props}>
+                        <img src={product?.image} width={600}/>
+                        <div className={style.description}>
+                            <h1>{product?.title}</h1>
+                            <br/>
+                            <p>price: {product?.price} $</p>
+                            <br/>
+                            <p>{product?.description}</p>
+                        </div>
+                    </div>
+                )
     );
 };
 

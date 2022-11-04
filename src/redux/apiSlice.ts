@@ -6,10 +6,16 @@ export const fakeStoreApi = createApi({
     baseQuery: fetchBaseQuery({baseUrl: process.env.REACT_APP_URL}),
     endpoints: (builder) => ({
         getProducts: builder.query<IProducts[], void>({
-            query: () => `products?limit=5`,
+            query: () => `products`,
+        }),
+        getProductsWithCategory: builder.query<IProducts[], {category?: string }>({
+            query: ({category= ""}) => `products/category/${category}`,
         }),
         getProduct: builder.query<IProducts, {id?: string}>({
             query: ({id}) => `products/${id}`,
+        }),
+        getCategories: builder.query<string[], void>({
+            query: () => `products/categories`,
         }),
     }),
 });
@@ -17,4 +23,6 @@ export const fakeStoreApi = createApi({
 export const {
     useGetProductsQuery,
     useGetProductQuery,
+    useGetCategoriesQuery,
+    useGetProductsWithCategoryQuery,
 } = fakeStoreApi;

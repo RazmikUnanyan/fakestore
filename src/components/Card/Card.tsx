@@ -4,9 +4,7 @@ import {ReactComponent as StarIcon} from "../../assets/svg/star.svg";
 import {CardProps} from "./Card.props";
 
 export const Card: FC<CardProps> = ({image, rating, price, title, ...props}) => (
-    <div className={style.card}
-         {...props}
-    >
+    <div className={style.card} {...props}>
         <div className={style.imgWrapper}>
             <img src={image} alt="img" className={style.img}/>
         </div>

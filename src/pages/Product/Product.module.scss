@@ -1,9 +1,11 @@
 @use '../../styles/abstracts/index' as *;
 
-.content {
+.product {
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
   gap: 20px;
-  width: 100%;
+}
+
+.description {
+  padding: 20px;
 }

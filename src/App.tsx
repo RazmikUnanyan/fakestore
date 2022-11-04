@@ -1,18 +1,17 @@
 import React from 'react';
 import {withLayout} from "./layout/Layout";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import {Routes, Route} from "react-router-dom";
 import Main from "./pages/Main/Main";
 import Product from "./pages/Product/Product";
 
 function App() {
-  return (
-      <Router>
+    return (
         <Routes>
-          <Route path="/" element={<Main/>}/>
-          <Route path="/:idProduct" element={<Product/>}/>
+            <Route path="/" element={<Main/>}/>
+            <Route path="/:category" element={<Main/>}/>
+            <Route path="/product/:idProduct" element={<Product/>}/>
         </Routes>
-      </Router>
-  );
+    );
 }
 
 export default withLayout(App);

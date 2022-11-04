@@ -1,31 +1,56 @@
-import React, {FC, useState} from 'react';
+import React, {FC, useEffect, useState} from 'react';
 import style from "./Header.module.scss";
+import cn from "classnames";
 import {ReactComponent as FilterIcon} from "../../assets/svg/filter.svg";
 import {HeaderProps} from "./Header.props";
 import {Button, Input, Menu, Switch, NavBar} from "../../components";
+import {useDebounce} from "../../hooks/fakestore.hooks";
+import {useGetCategoriesQuery} from "../../redux/apiSlice";
+import {Link, useNavigate, useParams} from "react-router-dom";
 
-const Header: FC<HeaderProps> = () => {
+const Header: FC<HeaderProps> = ({theme, setTheme, ...props}) => {
+
+    const navigate = useNavigate();
+    const { category } = useParams();
+
     const [isOpen, setOpen] = useState<boolean>(false);
-    const [isSun, setIsSun] = useState<boolean>(false);
+    const [searchValue, setSearchValue] = useState<string>("");
     const [showFilters, setShowFilters] = useState<boolean>(false);
 
+    const debouncedSearchTerm = useDebounce(searchValue, 500);
+
+    const {data: categories = [], isLoading} = useGetCategoriesQuery()
+
+    console.log(category)
+    useEffect(() => {
+        navigate(`/${debouncedSearchTerm}`)
+    }, [debouncedSearchTerm]);
+
     return (
-        <header className={style.header}>
+        <header className={cn(style.header, {
+            [style.dark]: theme === "dark"
+        })}
+                {...props}
+        >
             <div className={style.search}>
-                <Input placeholder="Search"/>
+                <Input placeholder="Search" value={searchValue} onChange={e => setSearchValue(e.target.value)}/>
                 <Menu isOpen={isOpen} onClick={() => setOpen(prev => !prev)}/>
             </div>
             {isOpen && (
-               <NavBar/>
+                <NavBar/>
             )}
             <div className={style.headerBottom}>
-                <div>
-                    {"computer & office > cpu"}
+                <div className={style.categories}>
+                    {categories.map((c, index) => (
+                        <Link to={`${c}`} key={index} className={c === category ? style.active : ""}>
+                            {`${c}`}
+                        </Link>
+                    ))}
                 </div>
                 <div className={style.buttons}>
-                    <Switch onClick={() => setIsSun(prev => !prev)} isSun={isSun}/>
+                    <Switch onClick={setTheme} theme={theme}/>
                     <Button
-                        onClick={() =>setShowFilters(prev => !prev)}
+                        onClick={() => setShowFilters(prev => !prev)}
                         icon={<FilterIcon width={30}/>}
                     >
                         filter
@@ -34,7 +59,7 @@ const Header: FC<HeaderProps> = () => {
             </div>
             {showFilters && (
                 <div className={style.filters}>
-                    {[...new Array(4)].map( (f, index) => (
+                    {[...new Array(4)].map((f, index) => (
                         <select key={index}>
                             <option value="0">filters:</option>
                             <option value="1">filter 1</option>
