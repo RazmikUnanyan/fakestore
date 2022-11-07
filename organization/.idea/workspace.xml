@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="f4d27205-e6f4-41af-a01d-11a1891dd601" name="Changes" comment="feat: added common" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="ProjectErrors" />
+  </component>
+  <component name="ProjectId" id="2GRf9P0UV6Tt8NDt6yFT1NlFmvF" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;js.linters.configure.manually.selectedeslint&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/macbook/Desktop/tests/organization&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.stylelint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;/Users/macbook/Desktop/tests/organization/node_modules/eslint&quot;,
+    &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
+    &quot;node.js.selected.package.stylelint&quot;: &quot;/Users/macbook/Desktop/tests/organization/node_modules/stylelint&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs.jest.jest_package&quot;: &quot;/Users/macbook/Desktop/tests/organization/node_modules/react-scripts&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/Users/macbook/Desktop/tests/organization/node_modules/typescript/lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/pages" />
+      <recent name="$PROJECT_DIR$/src/components/AddAndEditOrganization" />
+      <recent name="$PROJECT_DIR$/src/components/OrganizationCard" />
+      <recent name="$PROJECT_DIR$/src/pages/Organization/HeaderOrganization" />
+      <recent name="$PROJECT_DIR$/src/components/OrganizationHeader" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/data" />
+      <recent name="$PROJECT_DIR$/src/components" />
+      <recent name="$PROJECT_DIR$/src/styles" />
+      <recent name="$PROJECT_DIR$/src/components/OrganizationHeader" />
+      <recent name="$PROJECT_DIR$/src" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Jest.Licenses component test">
+    <configuration name="Licenses component test" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="SUITE" />
+      <test-file value="$PROJECT_DIR$/src/components/OrganizationCard/Licenses/Licenses.test.tsx" />
+      <test-names>
+        <test-name value="Licenses component test" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="Licenses component test.Render currently initial document" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/src/components/OrganizationCard/Licenses/Licenses.test.tsx" />
+      <test-names>
+        <test-name value="Licenses component test" />
+        <test-name value="Render currently initial document" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="server" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="server" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Jest.Licenses component test" />
+        <item itemvalue="Jest.Licenses component test.Render currently initial document" />
+        <item itemvalue="npm.start" />
+        <item itemvalue="npm.server" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f4d27205-e6f4-41af-a01d-11a1891dd601" name="Changes" comment="" />
+      <created>1666356164964</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1666356164964</updated>
+      <workItem from="1666356167675" duration="68478000" />
+      <workItem from="1666680998794" duration="790000" />
+      <workItem from="1666686857540" duration="4032000" />
+      <workItem from="1666786641672" duration="3582000" />
+      <workItem from="1666854153799" duration="5099000" />
+      <workItem from="1666874376723" duration="4019000" />
+      <workItem from="1667461416609" duration="1490000" />
+      <workItem from="1667476101080" duration="625000" />
+    </task>
+    <task id="LOCAL-00001" summary="feat: add and edit">
+      <created>1666533614239</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1666533614239</updated>
+    </task>
+    <task id="LOCAL-00002" summary="feat: delete">
+      <created>1666535990351</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1666535990351</updated>
+    </task>
+    <task id="LOCAL-00003" summary="feat: update">
+      <created>1666542129778</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1666542129778</updated>
+    </task>
+    <task id="LOCAL-00004" summary="feat: OrganizationCard update">
+      <created>1666547313356</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1666547313356</updated>
+    </task>
+    <task id="LOCAL-00005" summary="feat: OrganizationCard update">
+      <created>1666551286826</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1666551286826</updated>
+    </task>
+    <task id="LOCAL-00006" summary="run stylelint">
+      <created>1666595585168</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1666595585168</updated>
+    </task>
+    <task id="LOCAL-00007" summary="fix: index.html">
+      <created>1666597348070</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1666597348070</updated>
+    </task>
+    <task id="LOCAL-00008" summary="ref">
+      <created>1666598401913</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1666598401913</updated>
+    </task>
+    <task id="LOCAL-00009" summary="fix: README.md">
+      <created>1666598527575</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1666598527575</updated>
+    </task>
+    <task id="LOCAL-00010" summary="fix: layout">
+      <created>1666603134090</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1666603134090</updated>
+    </task>
+    <task id="LOCAL-00011" summary="fix: layout cards">
+      <created>1666607530852</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1666607530852</updated>
+    </task>
+    <task id="LOCAL-00012" summary="fix: button">
+      <created>1666608688868</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1666608688868</updated>
+    </task>
+    <task id="LOCAL-00013" summary="fix: search">
+      <created>1666609479640</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1666609479640</updated>
+    </task>
+    <task id="LOCAL-00014" summary="feat: tooltip">
+      <created>1666613334751</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1666613334751</updated>
+    </task>
+    <task id="LOCAL-00015" summary="rem: comment">
+      <created>1666617282330</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1666617282330</updated>
+    </task>
+    <task id="LOCAL-00016" summary="feat: add .env">
+      <created>1666688856231</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1666688856231</updated>
+    </task>
+    <task id="LOCAL-00017" summary="ref: import, db.json, app.tsx">
+      <created>1666788061058</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1666788061058</updated>
+    </task>
+    <task id="LOCAL-00018" summary="feat: added helpers">
+      <created>1666862927957</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1666862927957</updated>
+    </task>
+    <task id="LOCAL-00019" summary="feat: added common">
+      <created>1666863173577</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1666863173577</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="feat: add and edit" />
+    <MESSAGE value="feat: delete" />
+    <MESSAGE value="feat: update" />
+    <MESSAGE value="feat: OrganizationCard update" />
+    <MESSAGE value="run stylelint" />
+    <MESSAGE value="fix: index.html" />
+    <MESSAGE value="ref" />
+    <MESSAGE value="fix: README.md" />
+    <MESSAGE value="fix: layout" />
+    <MESSAGE value="fix: layout cards" />
+    <MESSAGE value="fix: button" />
+    <MESSAGE value="fix: search" />
+    <MESSAGE value="feat: tooltip" />
+    <MESSAGE value="rem: comment" />
+    <MESSAGE value="feat: add .env" />
+    <MESSAGE value="ref: import, db.json, app.tsx" />
+    <MESSAGE value="feat: added helpers" />
+    <MESSAGE value="feat: added common" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: added common" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>
