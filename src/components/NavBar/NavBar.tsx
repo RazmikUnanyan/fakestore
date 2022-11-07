@@ -13,6 +13,11 @@ export const NavBar: FC<NavBarProps> = ({ categories, ...props }) => (
                     </Link>
                 </li>
             ))}
+            <li>
+                <Link to={'/'}>
+                    all
+                </Link>
+            </li>
         </ul>
     </nav>
 )
