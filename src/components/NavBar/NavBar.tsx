@@ -1,14 +1,18 @@
-import React, {FC} from 'react';
-import style from "./NavBar.module.scss";
-import {NavBarProps} from "./NavBar.props";
+import React, { FC } from 'react'
+import style from './NavBar.module.scss'
+import { NavBarProps } from './NavBar.props'
+import { Link } from 'react-router-dom'
 
-export const NavBar: FC<NavBarProps> = ({...props}) => (
+export const NavBar: FC<NavBarProps> = ({ categories, ...props }) => (
     <nav {...props}>
-        <ul role="list" className={style.ul} >
-            <li><a href="#">Профель</a></li>
-            <li><a href="#">Настройки</a></li>
-            <li><a href="#">Корзина</a></li>
-            <li><a href="#">Выйти</a></li>
+        <ul role="list" className={style.ul}>
+            {categories.map((c, index) => (
+                <li key={index}>
+                    <Link to={`${c}`}>
+                        {`${c}`}
+                    </Link>
+                </li>
+            ))}
         </ul>
     </nav>
-);
+)

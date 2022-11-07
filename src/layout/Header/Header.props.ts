@@ -1,6 +1,6 @@
-import {DetailedHTMLProps, InputHTMLAttributes} from "react";
+import { DetailedHTMLProps, InputHTMLAttributes } from 'react'
 
-export interface HeaderProps extends DetailedHTMLProps<InputHTMLAttributes<HTMLHeadingElement>, HTMLHeadingElement>{
-    setTheme: () => void;
-    theme: "light" | "dark"
+export interface HeaderProps extends DetailedHTMLProps<InputHTMLAttributes<HTMLHeadingElement>, HTMLHeadingElement> {
+  setTheme: () => void
+  theme: 'light' | 'dark'
 }

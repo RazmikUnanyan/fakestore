@@ -1,21 +1,20 @@
-import React, {FC} from 'react';
-import {ProductProps} from "./Product.props";
-import style from './Product.module.scss';
-import {useGetProductQuery} from "../../redux/apiSlice";
-import {useParams} from "react-router-dom";
+import React, { FC } from 'react'
+import { ProductProps } from './Product.props'
+import style from './Product.module.scss'
+import { useGetProductQuery } from '../../redux/apiSlice'
+import { useParams } from 'react-router-dom'
 
+const Product: FC<ProductProps> = ({ ...props }) => {
+  const { idProduct } = useParams()
 
-const Product: FC<ProductProps> = ({...props}) => {
-    const {idProduct} = useParams()
+  const { data: product, isLoading } = useGetProductQuery({ id: idProduct })
 
-    const {data: product, isLoading} = useGetProductQuery({id: idProduct})
-
-    return (
-       isLoading
-                ? <>"Loading..."</>
-                : (
+  return (
+    isLoading
+      ? <>Loading...</>
+      : (
                     <div className={style.product} {...props}>
-                        <img src={product?.image} width={600}/>
+                        <img src={product?.image} width={600} alt="product image"/>
                         <div className={style.description}>
                             <h1>{product?.title}</h1>
                             <br/>
@@ -24,8 +23,8 @@ const Product: FC<ProductProps> = ({...props}) => {
                             <p>{product?.description}</p>
                         </div>
                     </div>
-                )
-    );
-};
+        )
+  )
+}
 
-export default Product;
+export default Product

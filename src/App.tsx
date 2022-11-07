@@ -1,17 +1,17 @@
-import React from 'react';
-import {withLayout} from "./layout/Layout";
-import {Routes, Route} from "react-router-dom";
-import Main from "./pages/Main/Main";
-import Product from "./pages/Product/Product";
+import React, { FC } from 'react'
+import { withLayout } from './layout/Layout'
+import { Routes, Route } from 'react-router-dom'
+import Main from './pages/Main/Main'
+import Product from './pages/Product/Product'
 
-function App() {
-    return (
+const App: FC = () => {
+  return (
         <Routes>
             <Route path="/" element={<Main/>}/>
             <Route path="/:category" element={<Main/>}/>
             <Route path="/product/:idProduct" element={<Product/>}/>
         </Routes>
-    );
+  )
 }
 
-export default withLayout(App);
+export default withLayout(App)
