@@ -4,41 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5a86119a-36d5-4d5a-96eb-2e20ce71dcc7" name="Changes" comment="feat: theme">
+    <list default="true" id="5a86119a-36d5-4d5a-96eb-2e20ce71dcc7" name="Changes" comment="run eslint">
+      <change afterPath="$PROJECT_DIR$/src/components/Select/Select.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Select/Select.props.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Select/Select.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Button/Button.props.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Button/Button.props.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Button/Button.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Button/Button.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Card/Card.props.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Card/Card.props.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Card/Card.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Card/Card.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Input/Input.props.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Input/Input.props.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Input/Input.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Input/Input.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Menu/Manu.props.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Menu/Manu.props.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Menu/Menu.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Menu/Menu.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/NavBar/NavBar.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/NavBar/NavBar.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/NavBar/NavBar.props.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/NavBar/NavBar.props.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/NavBar/NavBar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/NavBar/NavBar.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Switch/Switch.props.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Switch/Switch.props.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Switch/Switch.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Switch/Switch.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hooks/fakestore.hooks.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/hooks/fakestore.hooks.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hooks/store.hooks.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/hooks/store.hooks.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/interfaces/products.interface.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/interfaces/products.interface.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/layout/Header/Header.props.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/layout/Header/Header.props.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/layout/Header/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/layout/Header/Header.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/layout/Layout.props.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/layout/Layout.props.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/layout/Layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/layout/Layout.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Main/Main.props.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Main/Main.props.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Main/Main.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Main/Main.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Product/Product.props.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Product/Product.props.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Product/Product.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Product/Product.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/apiSlice.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/apiSlice.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/store.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/store.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/reportWebVitals.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/reportWebVitals.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,7 +36,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "js.linters.configure.manually.selectedeslint": "true",
-    "last_opened_file_path": "/Users/macbook/Desktop/tests/fakestore/src/assets/svg",
+    "last_opened_file_path": "/Users/macbook/Desktop/tests/fakestore/src/components",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.standard": "true",
     "node.js.detected.package.tslint": "true",
@@ -79,11 +51,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/components" />
       <recent name="$PROJECT_DIR$/src/assets/svg" />
       <recent name="$PROJECT_DIR$/src/pages/Product" />
       <recent name="$PROJECT_DIR$/src/components/Card" />
       <recent name="$PROJECT_DIR$/src" />
-      <recent name="$PROJECT_DIR$/src/components" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/components" />
@@ -101,7 +73,7 @@
       <workItem from="1667459972912" duration="353000" />
       <workItem from="1667460462530" duration="11756000" />
       <workItem from="1667472716059" duration="11542000" />
-      <workItem from="1667545513535" duration="16176000" />
+      <workItem from="1667545513535" duration="21135000" />
     </task>
     <task id="LOCAL-00001" summary="fix: README.md">
       <created>1667460072695</created>
@@ -145,7 +117,28 @@
       <option name="project" value="LOCAL" />
       <updated>1667565701706</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="run eslint">
+      <created>1667811922372</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1667811922372</updated>
+    </task>
+    <task id="LOCAL-00008" summary="run eslint">
+      <created>1667811978316</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1667811978316</updated>
+    </task>
+    <task id="LOCAL-00009" summary="run eslint">
+      <created>1667820019332</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1667820019332</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -169,6 +162,7 @@
     <MESSAGE value="feat: Card" />
     <MESSAGE value="feat: product" />
     <MESSAGE value="feat: theme" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: theme" />
+    <MESSAGE value="run eslint" />
+    <option name="LAST_COMMIT_MESSAGE" value="run eslint" />
   </component>
 </project>

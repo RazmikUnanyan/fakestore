@@ -3,7 +3,7 @@ import style from './Header.module.scss'
 import cn from 'classnames'
 import { ReactComponent as FilterIcon } from '../../assets/svg/filter.svg'
 import { HeaderProps } from './Header.props'
-import { Button, Input, Menu, Switch, NavBar } from '../../components'
+import { Button, Input, Menu, Switch, NavBar, Select } from '../../components'
 import { useDebounce } from '../../hooks/fakestore.hooks'
 import { useGetCategoriesQuery } from '../../redux/apiSlice'
 
@@ -51,13 +51,13 @@ const Header: FC<HeaderProps> = ({ theme, setTheme, ...props }) => {
             {showFilters && (
                 <div className={style.filters}>
                     {[...new Array(4)].map((f, index) => (
-                        <select key={index}>
+                        <Select key={index}>
                             <option value="0">filters:</option>
                             <option value="1">filter 1</option>
                             <option value="2">filter 2</option>
                             <option value="3">filter 3</option>
                             <option value="4">filter 4</option>
-                        </select>
+                        </Select>
                     ))}
                 </div>
             )}
