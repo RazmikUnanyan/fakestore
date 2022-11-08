@@ -4,13 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5a86119a-36d5-4d5a-96eb-2e20ce71dcc7" name="Changes" comment="run eslint">
-      <change afterPath="$PROJECT_DIR$/src/components/Select/Select.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Select/Select.props.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Select/Select.tsx" afterDir="false" />
+    <list default="true" id="5a86119a-36d5-4d5a-96eb-2e20ce71dcc7" name="Changes" comment="fix: README.md">
+      <change afterPath="$PROJECT_DIR$/src/components/Link/Link.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Link/Link.props.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Link/Link.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/context/app.context.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.eslintrc.js" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintrc.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/NavBar/NavBar.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/NavBar/NavBar.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/NavBar/NavBar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/NavBar/NavBar.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/layout/Header/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/layout/Header/Header.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layout/Layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/layout/Layout.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,7 +79,7 @@
       <workItem from="1667459972912" duration="353000" />
       <workItem from="1667460462530" duration="11756000" />
       <workItem from="1667472716059" duration="11542000" />
-      <workItem from="1667545513535" duration="21135000" />
+      <workItem from="1667545513535" duration="28775000" />
     </task>
     <task id="LOCAL-00001" summary="fix: README.md">
       <created>1667460072695</created>
@@ -138,7 +144,21 @@
       <option name="project" value="LOCAL" />
       <updated>1667820019332</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="feat: added select">
+      <created>1667822185433</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1667822185433</updated>
+    </task>
+    <task id="LOCAL-00011" summary="fix: README.md">
+      <created>1667822265589</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1667822265589</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -156,13 +176,14 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="fix: README.md" />
     <MESSAGE value="feat: added menu" />
     <MESSAGE value="feat: header" />
     <MESSAGE value="feat: Card" />
     <MESSAGE value="feat: product" />
     <MESSAGE value="feat: theme" />
     <MESSAGE value="run eslint" />
-    <option name="LAST_COMMIT_MESSAGE" value="run eslint" />
+    <MESSAGE value="feat: added select" />
+    <MESSAGE value="fix: README.md" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix: README.md" />
   </component>
 </project>

@@ -1,7 +1,7 @@
 import React, { FC } from 'react'
 import style from './NavBar.module.scss'
 import { NavBarProps } from './NavBar.props'
-import { Link } from 'react-router-dom'
+import { Link } from '../Link/Link'
 
 export const NavBar: FC<NavBarProps> = ({ categories, ...props }) => (
     <nav {...props}>

@@ -1,18 +1,21 @@
-import React, { FC, useEffect, useState } from 'react'
+import React, { FC, memo, useEffect, useState } from 'react'
 import style from './Header.module.scss'
 import cn from 'classnames'
+import { useParams } from 'react-router-dom'
 import { ReactComponent as FilterIcon } from '../../assets/svg/filter.svg'
 import { HeaderProps } from './Header.props'
 import { Button, Input, Menu, Switch, NavBar, Select } from '../../components'
 import { useDebounce } from '../../hooks/fakestore.hooks'
 import { useGetCategoriesQuery } from '../../redux/apiSlice'
 
-const Header: FC<HeaderProps> = ({ theme, setTheme, ...props }) => {
+const Header: FC<HeaderProps> = memo<HeaderProps>(({ theme, setTheme, ...props }) => {
+  const { category } = useParams()
   const [isOpen, setOpen] = useState<boolean>(false)
   const [searchValue, setSearchValue] = useState<string>('')
   const [showFilters, setShowFilters] = useState<boolean>(false)
 
   const debouncedSearchTerm = useDebounce(searchValue, 500)
+
   const { data: categories = [] } = useGetCategoriesQuery()
 
   useEffect(() => {
@@ -32,11 +35,11 @@ const Header: FC<HeaderProps> = ({ theme, setTheme, ...props }) => {
                 <Menu isOpen={isOpen} onClick={() => setOpen(prev => !prev)}/>
             </div>
             {isOpen && (
-                <NavBar categories={categories}/>
+                <NavBar categories={categories} onClick={() => setOpen(false)}/>
             )}
             <div className={style.headerBottom}>
                 <div className={style.categories}>
-                    Computer & Office
+                    {category ?? 'all'}
                 </div>
                 <div className={style.buttons}>
                     <Switch onClick={setTheme} theme={theme}/>
@@ -63,6 +66,6 @@ const Header: FC<HeaderProps> = ({ theme, setTheme, ...props }) => {
             )}
         </header>
   )
-}
+})
 
 export default Header

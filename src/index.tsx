@@ -12,7 +12,7 @@ const root = ReactDOM.createRoot(
 root.render(
     <Router>
         <Provider store={store}>
-            <App/>
+            <App theme='light'/>
         </Provider>
     </Router>
 )

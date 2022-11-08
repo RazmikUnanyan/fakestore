@@ -1,0 +1,10 @@
+@use '../../styles/abstracts/index' as *;
+
+.link {
+  text-decoration: none;
+  color: $brown;
+}
+
+.link:hover {
+  color: $black;
+}
