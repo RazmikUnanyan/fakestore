@@ -4,9 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5a86119a-36d5-4d5a-96eb-2e20ce71dcc7" name="Changes" comment="feat: added context">
+    <list default="true" id="5a86119a-36d5-4d5a-96eb-2e20ce71dcc7" name="Changes" comment="feat: theme type">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/context/app.context.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/context/app.context.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Menu/Menu.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Menu/Menu.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/_ui/Button/Button.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/_ui/Button/Button.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layout/Header/Header.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/layout/Header/Header.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layout/Header/Header.props.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/layout/Header/Header.props.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layout/Header/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/layout/Header/Header.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layout/Layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/layout/Layout.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,6 +60,7 @@
       <recent name="$PROJECT_DIR$/src" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/components/ui" />
       <recent name="$PROJECT_DIR$/src/components" />
       <recent name="$PROJECT_DIR$/src/layout" />
     </key>
@@ -69,7 +76,7 @@
       <workItem from="1667459972912" duration="353000" />
       <workItem from="1667460462530" duration="11756000" />
       <workItem from="1667472716059" duration="11542000" />
-      <workItem from="1667545513535" duration="29833000" />
+      <workItem from="1667545513535" duration="34284000" />
     </task>
     <task id="LOCAL-00001" summary="fix: README.md">
       <created>1667460072695</created>
@@ -155,7 +162,14 @@
       <option name="project" value="LOCAL" />
       <updated>1667892035166</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="feat: theme type">
+      <created>1667893092482</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1667893092482</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -182,6 +196,7 @@
     <MESSAGE value="feat: added select" />
     <MESSAGE value="fix: README.md" />
     <MESSAGE value="feat: added context" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: added context" />
+    <MESSAGE value="feat: theme type" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: theme type" />
   </component>
 </project>

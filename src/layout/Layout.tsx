@@ -6,7 +6,7 @@ import Header from './Header/Header'
 import { AppContext, AppContextProvider, IAppContext } from '../context/app.context'
 
 const Layout: FC<LayoutProps> = ({ children, ...props }) => {
-  const { theme, setTheme } = useContext(AppContext)
+  const { theme, setTheme } = useContext<IAppContext>(AppContext)
 
   const handleSetTheme = useCallback((): void => {
     if (setTheme) {

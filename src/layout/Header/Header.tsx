@@ -1,4 +1,4 @@
-import React, { FC, memo, useEffect, useState } from 'react'
+import React, { ChangeEvent, FC, memo, useCallback, useEffect, useState } from 'react'
 import style from './Header.module.scss'
 import cn from 'classnames'
 import { useParams } from 'react-router-dom'
@@ -10,19 +10,26 @@ import { useGetCategoriesQuery } from '../../redux/apiSlice'
 
 const Header: FC<HeaderProps> = memo<HeaderProps>(({ theme, setTheme, ...props }) => {
   const { category } = useParams()
+
+  const { data: categories = [] } = useGetCategoriesQuery()
+
   const [isOpen, setOpen] = useState<boolean>(false)
   const [searchValue, setSearchValue] = useState<string>('')
   const [showFilters, setShowFilters] = useState<boolean>(false)
 
   const debouncedSearchTerm = useDebounce(searchValue, 500)
 
-  const { data: categories = [] } = useGetCategoriesQuery()
+  console.log(category)
 
   useEffect(() => {
     if (debouncedSearchTerm !== '') {
       console.log(debouncedSearchTerm)
     }
   }, [debouncedSearchTerm])
+
+  const handleSetSearchValue = (e: ChangeEvent<HTMLInputElement>): void => setSearchValue(e.target.value)
+  const handleSetOpen = useCallback((): void => setOpen(prev => !prev), [])
+  const handleSetShowFilters = useCallback((): void => setShowFilters(prev => !prev), [])
 
   return (
         <header className={cn(style.header, {
@@ -31,11 +38,11 @@ const Header: FC<HeaderProps> = memo<HeaderProps>(({ theme, setTheme, ...props }
                 {...props}
         >
             <div className={style.search}>
-                <Input placeholder="Search" value={searchValue} onChange={e => setSearchValue(e.target.value)}/>
-                <Menu isOpen={isOpen} onClick={() => setOpen(prev => !prev)}/>
+                <Input placeholder="Search" value={searchValue} onChange={handleSetSearchValue}/>
+                <Menu isOpen={isOpen} onClick={handleSetOpen}/>
             </div>
             {isOpen && (
-                <NavBar categories={categories} onClick={() => setOpen(false)}/>
+                <NavBar categories={categories} onClick={handleSetOpen}/>
             )}
             <div className={style.headerBottom}>
                 <div className={style.categories}>
@@ -44,7 +51,7 @@ const Header: FC<HeaderProps> = memo<HeaderProps>(({ theme, setTheme, ...props }
                 <div className={style.buttons}>
                     <Switch onClick={setTheme} theme={theme}/>
                     <Button
-                        onClick={() => setShowFilters(prev => !prev)}
+                        onClick={handleSetShowFilters}
                         icon={<FilterIcon width={30}/>}
                     >
                         filter

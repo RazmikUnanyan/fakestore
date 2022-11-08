@@ -55,6 +55,7 @@
 .dark {
   border-bottom: 1px solid $white;
   background: $brown;
+  color: $white;
 
   input {
     border: 5px solid $white;
@@ -62,11 +63,13 @@
 
   a {
     text-decoration: none;
-    color: $white;
   }
 
   button {
     color: $white;
+    svg {
+      fill: $white;
+    }
   }
 
   ul {
