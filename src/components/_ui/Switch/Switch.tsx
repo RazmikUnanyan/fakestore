@@ -1,7 +1,7 @@
 import React, { FC } from 'react'
 import style from './Switch.module.scss'
-import { ReactComponent as SunIcon } from '../../assets/svg/sun.svg'
-import { ReactComponent as MoonIcon } from '../../assets/svg/moon.svg'
+import { ReactComponent as SunIcon } from '../../../assets/svg/sun.svg'
+import { ReactComponent as MoonIcon } from '../../../assets/svg/moon.svg'
 import { SwitchProps } from './Switch.props'
 import { Input } from '../Input/Input'
 

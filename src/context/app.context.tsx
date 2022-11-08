@@ -1,8 +1,9 @@
 import React, { createContext, PropsWithChildren, useState } from 'react'
 
+export type ITheme = 'light' | 'dark'
 export interface IAppContext {
-  theme: 'light' | 'dark'
-  setTheme?: (theme: 'light' | 'dark') => void
+  theme: ITheme
+  setTheme?: (theme: ITheme) => void
 }
 
 export const AppContext = createContext<IAppContext>({
@@ -12,8 +13,8 @@ export const AppContext = createContext<IAppContext>({
 })
 
 export const AppContextProvider = ({ theme, children }: PropsWithChildren<IAppContext>): JSX.Element => {
-  const [newTheme, setNewTheme] = useState<'light' | 'dark'>(theme)
-  const setTheme = (newTheme: 'light' | 'dark'): void => {
+  const [newTheme, setNewTheme] = useState<ITheme>(theme)
+  const setTheme = (newTheme: ITheme): void => {
     setNewTheme(newTheme)
   }
 
