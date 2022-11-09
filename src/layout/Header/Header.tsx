@@ -1,8 +1,9 @@
 import React, { ChangeEvent, FC, memo, useCallback, useEffect, useState } from 'react'
 import style from './Header.module.scss'
 import cn from 'classnames'
-import { useLocation } from 'react-router-dom'
+import { useLocation, useNavigate } from 'react-router-dom'
 import { ReactComponent as FilterIcon } from '../../assets/svg/filter.svg'
+import { ReactComponent as ArrowIcon } from '../../assets/svg/back-arrow.svg'
 import { HeaderProps } from './Header.props'
 import { Button, Input, Menu, Switch, NavBar, Select } from '../../components'
 import { useDebounce } from '../../hooks/fakestore.hooks'
@@ -10,7 +11,7 @@ import { useGetCategoriesQuery } from '../../redux/apiSlice'
 
 const Header: FC<HeaderProps> = memo<HeaderProps>(({ theme, setTheme, ...props }) => {
   const { pathname } = useLocation()
-
+  const navigate = useNavigate()
   const { data: categories = [] } = useGetCategoriesQuery()
 
   const [isOpen, setOpen] = useState<boolean>(false)
@@ -26,7 +27,7 @@ const Header: FC<HeaderProps> = memo<HeaderProps>(({ theme, setTheme, ...props }
   }, [debouncedSearchTerm])
 
   const category = pathname === '/' ? 'all' : pathname.replace(/[%/0-9]/gi, ' ')
-
+  const isProductPage = pathname.replace(/[%/0-9]/gi, '') === 'product'
   const handleSetSearchValue = (e: ChangeEvent<HTMLInputElement>): void => setSearchValue(e.target.value)
   const handleSetOpen = useCallback((): void => setOpen(prev => !prev), [])
   const handleSetShowFilters = useCallback((): void => setShowFilters(prev => !prev), [])
@@ -46,7 +47,10 @@ const Header: FC<HeaderProps> = memo<HeaderProps>(({ theme, setTheme, ...props }
             )}
             <div className={style.headerBottom}>
                 <div className={style.categories}>
-                    {category.toUpperCase()}
+                    {isProductPage
+                      ? <Button onClick={() => navigate('/')} icon={<ArrowIcon width={28}/>}>Назад</Button>
+                      : category.toUpperCase()
+                    }
                 </div>
                 <div className={style.buttons}>
                     <Switch onClick={setTheme} theme={theme}/>
