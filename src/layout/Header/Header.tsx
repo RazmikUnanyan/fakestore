@@ -18,6 +18,12 @@ const Header: FC<HeaderProps> = memo<HeaderProps>(({ theme, setTheme, ...props }
   const [searchValue, setSearchValue] = useState<string>('')
   const [showFilters, setShowFilters] = useState<boolean>(false)
 
+  const category = pathname === '/' ? 'all' : pathname.replace(/[%/0-9]/gi, ' ')
+  const isProductPage = pathname.replace(/[%/0-9]/gi, '') === 'product'
+  const handleSetSearchValue = (e: ChangeEvent<HTMLInputElement>): void => setSearchValue(e.target.value)
+  const handleSetOpen = useCallback((): void => setOpen(prev => !prev), [])
+  const handleSetShowFilters = useCallback((): void => setShowFilters(prev => !prev), [])
+
   const debouncedSearchTerm = useDebounce(searchValue, 500)
 
   useEffect(() => {
@@ -25,12 +31,6 @@ const Header: FC<HeaderProps> = memo<HeaderProps>(({ theme, setTheme, ...props }
       console.log(debouncedSearchTerm)
     }
   }, [debouncedSearchTerm])
-
-  const category = pathname === '/' ? 'all' : pathname.replace(/[%/0-9]/gi, ' ')
-  const isProductPage = pathname.replace(/[%/0-9]/gi, '') === 'product'
-  const handleSetSearchValue = (e: ChangeEvent<HTMLInputElement>): void => setSearchValue(e.target.value)
-  const handleSetOpen = useCallback((): void => setOpen(prev => !prev), [])
-  const handleSetShowFilters = useCallback((): void => setShowFilters(prev => !prev), [])
 
   return (
         <header className={cn(style.header, {
