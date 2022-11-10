@@ -39,10 +39,12 @@ const Header: FC<HeaderProps> = memo<HeaderProps>(({ theme, setTheme, ...props }
         })}
                 {...props}
         >
-            <div className={style.search}>
-                <Input placeholder="Search" value={searchValue} onChange={handleSetSearchValue}/>
-                <Menu isOpen={isOpen} onClick={handleSetOpen}/>
-            </div>
+            {!isProductPage && (
+                <div className={style.search}>
+                    <Input placeholder="Search" value={searchValue} onChange={handleSetSearchValue}/>
+                    <Menu isOpen={isOpen} onClick={handleSetOpen}/>
+                </div>
+            )}
             {isOpen && (
                 <NavBar categories={categories} onClick={handleSetOpen}/>
             )}
@@ -55,12 +57,14 @@ const Header: FC<HeaderProps> = memo<HeaderProps>(({ theme, setTheme, ...props }
                 </div>
                 <div className={style.buttons}>
                     <Switch onClick={setTheme} theme={theme}/>
-                    <Button
-                        onClick={handleSetShowFilters}
-                        icon={<FilterIcon width={30}/>}
-                    >
-                        filter
-                    </Button>
+                    {!isProductPage && (
+                        <Button
+                            onClick={handleSetShowFilters}
+                            icon={<FilterIcon width={30}/>}
+                        >
+                            filter
+                        </Button>
+                    )}
                 </div>
             </div>
             {showFilters && (
