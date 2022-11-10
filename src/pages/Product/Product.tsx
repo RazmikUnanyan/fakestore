@@ -10,10 +10,11 @@ const Product: FC<ProductProps> = ({ ...props }) => {
   const { data: product, isLoading } = useGetProductQuery({ id: idProduct })
 
   return (
-    isLoading
-      ? <>Loading...</>
-      : (
-                    <div className={style.product} {...props}>
+        <div className={style.product} {...props}>
+            {isLoading
+              ? <div>Loading...</div>
+              : (
+                    <>
                         <img src={product?.image} width={600} alt="product image"/>
                         <div className={style.description}>
                             <h1>{product?.title}</h1>
@@ -22,8 +23,9 @@ const Product: FC<ProductProps> = ({ ...props }) => {
                             <br/>
                             <p>{product?.description}</p>
                         </div>
-                    </div>
-        )
+                    </>
+                )}
+        </div>
   )
 }
 
