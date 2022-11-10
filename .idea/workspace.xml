@@ -4,8 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5a86119a-36d5-4d5a-96eb-2e20ce71dcc7" name="Changes" comment="run eslint">
+    <list default="true" id="5a86119a-36d5-4d5a-96eb-2e20ce71dcc7" name="Changes" comment="fix: theme">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/context/app.context.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/context/app.context.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layout/Header/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/layout/Header/Header.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Main/Main.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Main/Main.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Product/Product.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Product/Product.module.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,7 +75,7 @@
       <workItem from="1667472716059" duration="11542000" />
       <workItem from="1667545513535" duration="37577000" />
       <workItem from="1667907310404" duration="1437000" />
-      <workItem from="1667908751556" duration="8778000" />
+      <workItem from="1667908751556" duration="14406000" />
     </task>
     <task id="LOCAL-00001" summary="fix: README.md">
       <created>1667460072695</created>
@@ -192,7 +196,14 @@
       <option name="project" value="LOCAL" />
       <updated>1667986061555</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="fix: theme">
+      <created>1667996159025</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1667996159025</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -223,6 +234,7 @@
     <MESSAGE value="feat: category" />
     <MESSAGE value="add: back button" />
     <MESSAGE value="run eslint" />
-    <option name="LAST_COMMIT_MESSAGE" value="run eslint" />
+    <MESSAGE value="fix: theme" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix: theme" />
   </component>
 </project>

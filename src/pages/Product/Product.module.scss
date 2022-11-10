@@ -2,10 +2,13 @@
 
 .product {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
+
 }
 
 .description {
   padding: 20px;
+  max-width: 500px;
 }

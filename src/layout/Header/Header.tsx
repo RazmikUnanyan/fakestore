@@ -1,4 +1,4 @@
-import React, { ChangeEvent, FC, memo, useCallback, useEffect, useState } from 'react'
+import React, { ChangeEvent, FC, memo, useCallback, useContext, useEffect, useState } from 'react'
 import style from './Header.module.scss'
 import cn from 'classnames'
 import { useLocation, useNavigate } from 'react-router-dom'
@@ -8,14 +8,17 @@ import { HeaderProps } from './Header.props'
 import { Button, Input, Menu, Switch, NavBar, Select } from '../../components'
 import { useDebounce } from '../../hooks/fakestore.hooks'
 import { useGetCategoriesQuery } from '../../redux/apiSlice'
+import { AppContext } from '../../context/app.context'
 
 const Header: FC<HeaderProps> = memo<HeaderProps>(({ theme, setTheme, ...props }) => {
   const { pathname } = useLocation()
   const navigate = useNavigate()
+  const { searchParams, setSearchParams } = useContext(AppContext)
+
   const { data: categories = [] } = useGetCategoriesQuery()
 
   const [isOpen, setOpen] = useState<boolean>(false)
-  const [searchValue, setSearchValue] = useState<string>('')
+  const [searchValue, setSearchValue] = useState<string>(searchParams?.get('search') ?? '')
   const [showFilters, setShowFilters] = useState<boolean>(false)
 
   const category = pathname === '/' ? 'all' : pathname.replace(/[%/0-9]/gi, ' ')
@@ -27,9 +30,7 @@ const Header: FC<HeaderProps> = memo<HeaderProps>(({ theme, setTheme, ...props }
   const debouncedSearchTerm = useDebounce(searchValue, 500)
 
   useEffect(() => {
-    if (debouncedSearchTerm !== '') {
-      console.log(debouncedSearchTerm)
-    }
+    setSearchParams({ search: debouncedSearchTerm })
   }, [debouncedSearchTerm])
 
   return (
