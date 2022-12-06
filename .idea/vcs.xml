@@ -3,7 +3,9 @@
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/fakestore" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/marketplace" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/organization" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/subsocial-react-example" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/twitter-login" vcs="Git" />
   </component>
 </project>
